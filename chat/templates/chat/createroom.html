@@ -1,0 +1,23 @@
+<!-- create_chat_room.html -->
+
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div class="flex justify-center items-center h-screen">
+    <div class="bg-white p-16 rounded-lg shadow-md w-96">
+        <h2 class="text-3xl font-bold mb-8">Create a Chat Room</h2>
+        <form method="post" action="{% url 'create' %}" class="space-y-4">
+            {% csrf_token %}
+            <div>
+                <label for="id_name" class="block text-sm font-medium text-gray-600 mb-2">Room Name</label>
+                {{ form.name}}
+            </div>
+            <div>
+                <label for="id_slug" class="block text-sm font-medium text-gray-600 mb-2">Slug</label>
+                {{ form.slug}}
+            </div>
+            <button type="submit" class="px-6 py-3 rounded-full bg-blue-500 text-white hover:bg-blue-600">Create Room</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

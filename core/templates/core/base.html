@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Djangochat{% endblock %}</title>
+
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        /* Additional custom styles */
+        body {
+            background: linear-gradient(to right, #7F7FD5, #86A8E7, #91EAE4);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Choose a distinct font */
+            color: #2d3748; /* Set the text color to a dark gray */
+        }
+
+        .messages {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        /* Set the text color for links */
+        a {
+            color: #4299e1; /* Set link color to a blue shade */
+        }
+
+        /* Set the text color for hover effects on links */
+        a:hover {
+            color: #3182ce; /* Set hover color to a slightly darker blue */
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased">
+    <nav class="flex items-center justify-between px-4 py-6 bg-teal-800">
+        <div>
+            <a href="/" class="text-xl font-bold text-gray-800">Djangochat</a>
+        </div>
+
+        <div class="flex items-center space-x-4">
+            {% if request.user.is_authenticated %}
+                <a href="/rooms/" class="text-white hover:text-gray-300">Rooms</a>
+                <a href="/logout/" class="px-4 py-2 rounded text-teal-900 bg-teal-300 hover:bg-teal-500">Log out</a>
+            {% else %}
+                <a href="/login/" class="text-white hover:text-gray-300">Log in</a>
+                <a href="/signup/" class="px-4 py-2 rounded text-teal-900 bg-teal-300 hover:bg-teal-500">Sign up</a>
+            {% endif %}
+        </div>
+    </nav>
+
+    <div class="mx-auto my-8 p-4">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    {% block scripts %}
+    <!-- Additional scripts go here -->
+    {% endblock %}
+</body>
+</html>

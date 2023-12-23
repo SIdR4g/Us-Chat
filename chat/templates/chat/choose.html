@@ -1,0 +1,24 @@
+<!-- index.html -->
+
+{% extends 'core/base.html' %}
+
+{% block title %}Chat Room Options{% endblock %}
+
+{% block content %}
+<div class="flex justify-center items-center h-screen">
+    <div class="text-center">
+        <h1 class="text-4xl font-bold mb-8">Choose an Option</h1>
+        <div class="flex space-x-4">
+            <!-- Create Room Option -->
+            <a href="/rooms/create_room/" class="px-6 py-3 rounded-full bg-green-500 hover:bg-green-600 text-white flex items-center">
+                <span class="mr-2 text-2xl">&#43;</span> CREATE ROOM
+            </a>
+            
+            <!-- Join Room Option -->
+            <a href="/rooms/join_room/" class="px-6 py-3 rounded-full bg-blue-500 hover:bg-blue-600 text-white flex items-center">
+                <span class="mr-2 text-2xl">&#128197;</span> JOIN ROOM
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
