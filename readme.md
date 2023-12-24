@@ -56,6 +56,23 @@ To run the Us-chat application locally, follow these steps:
 3. Create or join a room.
 4. Start chatting with other participants in real-time.
 
+## Sample
+
+### Login
+![Screenshot 2023-12-24 113151](https://github.com/SIdR4g/Us-Chat/assets/78850085/85d744dc-fb22-4844-a053-62b817fed9a8)
+
+### Room Options
+![Screenshot 2023-12-24 113215](https://github.com/SIdR4g/Us-Chat/assets/78850085/82b6355b-c5c0-443d-8a19-964277c06d84)
+
+### Create Room
+![Screenshot 2023-12-24 113225](https://github.com/SIdR4g/Us-Chat/assets/78850085/8ee53cca-ae1b-435a-bd7c-27b2a3c85f7e)
+
+### Join Room
+![Screenshot 2023-12-24 113315](https://github.com/SIdR4g/Us-Chat/assets/78850085/6734baa6-d907-48df-a0d8-e3a22536dd0f)
+
+### Messaging Interface
+![Screenshot 2023-12-24 113902](https://github.com/SIdR4g/Us-Chat/assets/78850085/ec32d74f-264b-492a-b063-b2be8a6e0173)
+
 ## Contributing
 
 If you'd like to contribute to Us-chat, please follow these steps:
@@ -72,9 +89,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For any inquiries or issues, please contact [your-email@example.com].
+For any inquiries or issues, please contact [siddyant34@gmail.com].
 
-## Acknowledgments
-
-- Mention any third-party libraries or resources used and give credit.
 
