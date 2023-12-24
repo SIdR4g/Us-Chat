@@ -1,6 +1,4 @@
-Certainly! Since your website is built using Django, here's a README template in Markdown format tailored for a Django project:
 
-```markdown
 # Us-chat
 
 Us-chat is a real-time chat website built using Django, leveraging WebSocket technology for smooth and instant messaging. Users can create and join rooms to engage in conversations with other participants. All messages from the conversations are saved, providing a persistent chat history.
@@ -10,14 +8,15 @@ Us-chat is a real-time chat website built using Django, leveraging WebSocket tec
 - Real-time messaging using WebSocket
 - Room creation and joining
 - Persistent chat history
-- [Add any additional features here]
+- Robust authentication
 
 ## Technologies Used
 
 - Django
 - Channels (for WebSocket support)
+- Redis (for message caching)
 - HTML, CSS, JavaScript (for the frontend)
-- [Add any other technologies/libraries used]
+  
 
 ## Getting Started
 
@@ -79,6 +78,3 @@ For any inquiries or issues, please contact [your-email@example.com].
 
 - Mention any third-party libraries or resources used and give credit.
 
-```
-
-Feel free to modify the content based on your project's specifics. Don't forget to include a `LICENSE` file if you haven't already, and update the contact information and acknowledgments accordingly.
